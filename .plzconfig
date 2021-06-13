@@ -1,0 +1,5 @@
+; Please config file
+; See https://please.build/config.html for more details
+
+[Please]
+Version = 16.1.0
