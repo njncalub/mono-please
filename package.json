@@ -1,0 +1,91 @@
+{
+  "name": "mono-please",
+  "version": "0.0.0",
+  "description": "A monorepo using Please.",
+  "private": true,
+  "author": {
+    "name": "Nap Joseph Calub",
+    "email": "hello@napjose.ph",
+    "url": "https://napjose.ph"
+  },
+  "homepage": "https://github.com/njncalub/mono-please",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njncalub/mono-please.git"
+  },
+  "bugs": {
+    "url": "https://github.com/njncalub/mono-please/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "commithelper": "^1.2.0",
+    "husky": "^6.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "commithelper": {
+    "subjectLimit": 50,
+    "ticketPrefix": "CLOSED:",
+    "types": [
+      {
+        "name": "feat",
+        "message": "a new feature or enhancement"
+      },
+      {
+        "name": "fix",
+        "message": "a bug fix"
+      },
+      {
+        "name": "build",
+        "message": "changes that affect the build system or external dependencies"
+      },
+      {
+        "name": "ci",
+        "message": "changes to the CI configuration files and scripts"
+      },
+      {
+        "name": "perf",
+        "message": "a code change that improves performance"
+      },
+      {
+        "name": "docs",
+        "message": "documentation only changes"
+      },
+      {
+        "name": "refactor",
+        "message": "a code change that neither fixes a bug nor adds a feature"
+      },
+      {
+        "name": "style",
+        "message": "changes that do not affect the meaning of the code"
+      },
+      {
+        "name": "test",
+        "message": "adding missing tests or correcting existing tests"
+      }
+    ],
+    "scopes": [
+      {
+        "name": "third_party",
+        "message": "anything related to third party dependencies"
+      },
+      {
+        "name": "repo",
+        "message": "anything related to managing the repository"
+      },
+      {
+        "name": "migrations",
+        "message": "related to general upgrades or migrations"
+      },
+      {
+        "name": "changelog",
+        "message": "related to updating the changelog"
+      },
+      {
+        "name": "misc",
+        "message": "miscellaneous stuff"
+      }
+    ]
+  }
+}
